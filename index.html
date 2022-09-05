@@ -1,40 +1,420 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Blockchain designed front-end</h1>
+        </section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+        <section>
+          <h2>*transition graph web1 - web2 - web3*</h2>
+        </section>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        <section>
+          <img src="https://jsdzem.pl/wp-content/uploads/2022/09/what-do-i-do.jpeg" />
+        </section>
+
+        <section>*sketch of front-end UI*</section>
+
+        <section>
+          <!-- How did I get into web3? -->
+          <video data-autoplay src="https://jsdzem.pl/wp-content/uploads/2022/09/how-did-i-get-to-wb3.mp4"></video>
+        </section>
+
+        <section>
+          <h2>Disclaimer</h2>
+          <ul>
+            <li>My stack ≠ is not the only right stack</li>
+            <li>No smart contract coding, no Solidity language</li>
+            <li>EVM compatible chains</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Why blockchain?</h2>
+          <ul>
+            <li>Provides ownership out of the box</li>
+            <li>Ready to use platform</li>
+            <li>Open Source</li>
+          </ul>
+        </section>
+
+        <section>
+          <div class="r-stack">
+            <img src="https://jsdzem.pl/wp-content/uploads/2022/09/connect-wallet-button-not-highlighted.png" />
+            <img class="fragment" src="https://jsdzem.pl/wp-content/uploads/2022/09/connect-wallet-button.png" />
+          </div>
+        </section>
+
+        <section>
+          <p>web2 ➡️ backend</p>
+          <p>web3 ➡️ blockchain</p>
+        </section>
+
+        <section>
+          <h2><span>a</span> node</h2>
+          <h3>❌ node.js</h3>
+        </section>
+
+        <section>
+          <h3>Node providers</h3>
+          <div style="display: flex">
+            <div>
+              <a href="https://infura.io/" target="_blank">Infura</a>
+              <img
+                data-src="https://jsdzem.pl/wp-content/uploads/2022/06/infura.png"
+                alt="Infura"
+              />
+            </div>
+            <div>
+              <a href="https://www.alchemy.com/" target="_blank">Alchemy</a>
+              <img
+                data-src="https://jsdzem.pl/wp-content/uploads/2022/06/alchemy.png"
+                alt="Alchemy"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <ul>
+            <li>✅ read</li>
+            <li class="fragment">✅ write 👛</li>
+            <li class="fragment">❌ update</li>
+            <li class="fragment">❌ delete</li>
+          </ul>
+        </section>
+
+        <section>
+          <table>
+            <tr>
+              <td>web2</td>
+              <td>web3</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="r-stack">
+                  <div>😥</div>
+                  <div class="fragment">🥹</div>
+                  <div class="fragment">😄</div>
+                </div>
+              </td>
+              <td>😎</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="fragment" style="text-align: center">
+                🤝
+              </td>
+            </tr>
+          </table>
+        </section>
+
+        <section>
+          <p>0x5981ac4718e35aE03F5533290eD204a767148450</p>
+        </section>
+
+        <section>
+          <h2 style="display: flex; justify-content: center">
+            A
+            <span class="r-stack">
+              <span class="fragment fade-out" data-fragment-index="1">P</span>
+              <span class="fragment" data-fragment-index="1">B</span>
+            </span>
+            I
+          </h2>
+          <div class="r-stack">
+            <p
+              style="display: flex; justify-content: center"
+              class="fragment fade-out"
+              data-fragment-index="2"
+            >
+              <span class="fragment fade-out" data-fragment-index="2"
+                >application&nbsp;&nbsp;&nbsp;</span
+              >
+              <span class="r-stack">
+                <span class="fragment fade-out" data-fragment-index="1"
+                  >programming</span
+                >
+                <span class="fragment" data-fragment-index="1">binary</span>
+                <span class="fragment" data-fragment-index="2">schema</span>
+              </span>
+              <span class="fragment fade-out" data-fragment-index="2"
+                >&nbsp;&nbsp;&nbsp;interface</span
+              >
+            </p>
+            <p class="fragment" data-fragment-index="2">schema</p>
+          </div>
+        </section>
+
+        <section>
+          <div style="max-height: 65vh; overflow: scroll">
+            <script src="https://gist.github.com/veox/8800debbf56e24718f9f483e1e40c35c.js"></script>
+          </div>
+        </section>
+
+        <section>
+          <img src="https://jsdzem.pl/wp-content/uploads/2022/09/web3-js.png" />
+          <img class="fragment" src="https://jsdzem.pl/wp-content/uploads/2022/09/ethers-js.png" />
+        </section>
+
+        <section>
+          <pre><code data-trim data-line-numbers="1|2|3|4|5">
+						const provider = new ethers.providers.Web3Provider(window.ethereum);
+						await provider.send("eth_requestAccounts", []);
+						const signer = provider.getSigner();
+						const contract = new ethers.Contract(address, abi, provider);
+						await contract.name()
+					</code></pre>
+        </section>
+
+        <section>
+          <h2>Reading from blockchain</h2>
+          <ul>
+            <li>reading stands for getting something</li>
+            <li>free 🆓 you don't pay ETH for gas</li>
+            <li>no wallet required, shared node is enough</li>
+            <li>
+              <code>() ⇒ Promise&lt;Result&gt;</code>
+            </li>
+            <li>no event emitted</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Writing to blockchain</h2>
+
+          <ul>
+            <li>writing stands for setting something</li>
+            <li>cost you to pay for gas</li>
+            <li>connected wallet required</li>
+            <li>
+              <code>
+                () ⇒ Promise&lt;{ wait: () ⇒ Promise&lt;Receipt&gt; }&gt;
+              </code>
+            </li>
+            <li>can emit events</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>MetaMask</h2>
+          <p>*browser plugin screenshot*</p>
+        </section>
+
+        <section>
+          <div style="display: flex; justify-content: space-between">
+            <p>wallet ==</p>
+            <div style="text-align: right">
+              <p class="fragment">identity</p>
+              <p class="fragment">account</p>
+              <p class="fragment">owner of tokens</p>
+              <p class="fragment">values</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Challenges for front-end devs</h2>
+        </section>
+
+        <section>
+          <p>*some weird calculations in JavaScript 😅*</p>
+        </section>
+
+        <section>
+          <p>*cals code and result - side by side*</p>
+        </section>
+
+        <section>
+          <p>*issue with primitive obsession - code*</p>
+        </section>
+
+        <section>
+          <h2>Real time UI</h2>
+        </section>
+
+        <section>
+          <h2>The old way</h2>
+          <ul>
+            <li class="fragment">refresh data in relevant interval</li>
+            <li class="fragment">
+              update when transaction transaction affected your data
+            </li>
+            <li class="fragment">filter redundant calls</li>
+            <li class="fragment">manage priority</li>
+          </ul>
+        </section>
+
+        <section>
+          <div>
+            <div>
+              <span>📦</span>
+              <span class="fragment">📦</span>
+              <span class="fragment">📦</span>
+              <span class="fragment">📦</span>
+              <span class="fragment">📦</span>
+            </div>
+            <div>
+              <span>🕛</span>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <table>
+            <tr>
+              <td>UI</td>
+              <td>data</td>
+              <td>events</td>
+            </tr>
+            <tr>
+              <td>React</td>
+              <td>Redux</td>
+              <td>RxJS</td>
+            </tr>
+            <tr>
+              <td colspan="3" style="text-align: center">useDapp</td>
+            </tr>
+          </table>
+        </section>
+
+        <section>
+          <p>
+            <span>Multicall</span>
+            <span class="fragment">+ block change detecting</span>
+            <span class="fragment">= real time UI</span>
+          </p>
+        </section>
+
+        <section>
+          Testing
+          <p>What do we want to test?</p>
+        </section>
+
+        <section>
+          <div class="r-stack">
+            <img
+              data-fragment-index="0"
+              class="fragment fade-in-then-semi-out"
+              src="https://jsdzem.pl/wp-content/uploads/2022/09/test-testpyramid.png"
+              alt="test pyramid"
+            />
+
+            <div class="fragment fade-out" data-fragment-index="4">
+              <br />
+              <p class="fragment" data-fragment-index="3">E2E</p>
+              <br />
+              <p class="fragment" data-fragment-index="2">integration</p>
+              <br />
+              <p class="fragment" data-fragment-index="1">unit</p>
+            </div>
+
+            <div class="fragment" data-fragment-index="4">
+              <br />
+              <p
+                class="fragment"
+                data-fragment-index="12"
+                style="margin-bottom: 6%"
+              >
+                <span
+									class="fragment fade-out"
+									data-fragment-index="14"
+								>
+                  Run in real browser
+                  <span class="fragment" data-fragment-index="13">
+                    with real wallet
+                  </span>
+                </span>
+              </p>
+
+              <p class="fragment" data-fragment-index="7">
+                <span
+                  style="display: flex; flex-direction: column"
+                  class="fragment fade-out"
+                  data-fragment-index="11"
+                >
+                  <span class="fragment" data-fragment-index="8"
+                    >what parts involved?</span
+                  >
+                  <span class="fragment" data-fragment-index="9"
+                    >local blockchain instance (Geth, Ganache)</span
+                  >
+                  <span class="fragment" data-fragment-index="10"
+                    >facade for all blockchain related communication</span
+                  >
+                </span>
+              </p>
+
+              <p
+                style="display: flex; justify-content: center; margin-top: 6%"
+                class="fragment fade-out"
+                data-fragment-index="7"
+              >
+                <span class="r-stack">
+                  <span class="fragment" data-fragment-index="4"
+                    >smart contracts</span
+                  >
+                  <span class="fragment" data-fragment-index="5">❌</span>
+                </span>
+                <span class="fragment" data-fragment-index="6"
+                  >&nbsp;&nbsp;&nbsp;&nbsp; components</span
+                >
+              </p>
+            </div>
+
+            <div class="fragment" data-fragment-index="15">
+							<br/>
+              <p>Cypress + MetaMask = Synpress</p>
+							<br/>
+              <p>@testing-library</p>
+							<br/>
+              <p>@testing-library</p>
+            </div>
+          </div>
+        </section>
+
+				<section>
+					<p>video with Synpress running</p>
+				</section>
+
+				<section>
+					Environments
+					<img class="fragment" data-src="https://jsdzem.pl/wp-content/uploads/2022/06/environments.png" alt="Environments" />
+				</section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
