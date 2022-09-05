@@ -1,9 +1,6 @@
 {
-  "name": "reveal.js",
-  "version": "4.3.1",
-  "description": "The HTML Presentation Framework",
-  "homepage": "https://revealjs.com",
-  "subdomain": "revealjs",
+  "name": "blockchain-designed-frontend-meetjs-summit-2022",
+  "version": "1.0.0",
   "main": "dist/reveal.js",
   "module": "dist/reveal.esm.js",
   "license": "MIT",
