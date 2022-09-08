@@ -24,53 +24,95 @@
         </section>
 
         <section>
-          <h2>*transition graph web1 - web2 - web3*</h2>
+          <img
+            src="https://jsdzem.pl/wp-content/uploads/2022/09/web3-signin.png"
+            alt="web 3 sign in"
+          />
         </section>
 
         <section>
-          <img src="https://jsdzem.pl/wp-content/uploads/2022/09/what-do-i-do.jpeg" />
+          <div style="display: flex" class="justify-around">
+            <div>
+              <h3>web 1</h3>
+              <img
+                src="https://jsdzem.pl/wp-content/uploads/2022/09/web1-signin.png"
+                alt="web 1 sign in"
+              />
+            </div>
+            <div class="fragment">
+              <h3>web 2</h3>
+              <img
+                src="https://jsdzem.pl/wp-content/uploads/2022/09/web2-signin.png"
+                alt="web 2 sign in"
+              />
+            </div>
+            <div class="fragment">
+              <h3>web 3</h3>
+              <img
+                src="https://jsdzem.pl/wp-content/uploads/2022/09/web3-signin.png"
+                alt="web 3 sign in"
+              />
+            </div>
+          </div>
         </section>
 
-        <section>*sketch of front-end UI*</section>
+        <section>
+          <img
+            src="https://jsdzem.pl/wp-content/uploads/2022/09/what-do-i-do.jpeg"
+          />
+        </section>
+
+        <section>
+          <h2>Dapps</h2>
+        </section>
 
         <section>
           <!-- How did I get into web3? -->
-          <video data-autoplay src="https://jsdzem.pl/wp-content/uploads/2022/09/how-did-i-get-to-wb3.mp4"></video>
+          <video
+            data-autoplay
+            src="https://jsdzem.pl/wp-content/uploads/2022/09/how-did-i-get-to-wb3.mp4"
+          ></video>
         </section>
 
         <section>
           <h2>Disclaimer</h2>
           <ul>
-            <li>My stack ≠ is not the only right stack</li>
-            <li>No smart contract coding, no Solidity language</li>
-            <li>EVM compatible chains</li>
+            <li class="fragment">
+              My stack <span class="fragment">= React.js</span>
+            </li>
+            <li class="fragment">EVM compatible chains</li>
           </ul>
         </section>
 
         <section>
           <h2>Why blockchain?</h2>
           <ul>
-            <li>Provides ownership out of the box</li>
-            <li>Ready to use platform</li>
-            <li>Open Source</li>
+            <li class="fragment">ready to use platform</li>
+            <li class="fragment">ownership out of the box</li>
+            <li class="fragment">open source</li>
           </ul>
         </section>
 
         <section>
           <div class="r-stack">
-            <img src="https://jsdzem.pl/wp-content/uploads/2022/09/connect-wallet-button-not-highlighted.png" />
-            <img class="fragment" src="https://jsdzem.pl/wp-content/uploads/2022/09/connect-wallet-button.png" />
+            <img
+              src="https://jsdzem.pl/wp-content/uploads/2022/09/connect-wallet-button-not-highlighted.png"
+            />
+            <img
+              class="fragment"
+              src="https://jsdzem.pl/wp-content/uploads/2022/09/connect-wallet-button.png"
+            />
           </div>
         </section>
 
         <section>
           <p>web2 ➡️ backend</p>
-          <p>web3 ➡️ blockchain</p>
+          <p class="fragment">web3 ➡️ blockchain</p>
         </section>
 
         <section>
-          <h2><span>a</span> node</h2>
-          <h3>❌ node.js</h3>
+          <h2><span class="fragment">a</span> node</h2>
+          <h3 class="fragment">❌ node.js</h3>
         </section>
 
         <section>
@@ -96,34 +138,28 @@
         <section>
           <ul>
             <li>✅ read</li>
-            <li class="fragment">✅ write 👛</li>
-            <li class="fragment">❌ update</li>
-            <li class="fragment">❌ delete</li>
+            <li class="fragment" data-fragment-index="1">✅ write 👛</li>
+            <li class="fragment" data-fragment-index="2">❌ update</li>
+            <li class="fragment" data-fragment-index="2">❌ delete</li>
           </ul>
         </section>
 
         <section>
-          <table>
-            <tr>
-              <td>web2</td>
-              <td>web3</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="r-stack">
-                  <div>😥</div>
-                  <div class="fragment">🥹</div>
-                  <div class="fragment">😄</div>
-                </div>
-              </td>
-              <td>😎</td>
-            </tr>
-            <tr>
-              <td colspan="2" class="fragment" style="text-align: center">
-                🤝
-              </td>
-            </tr>
-          </table>
+          <div style="display: flex" class="justify-around">
+            <h3>web2</h3>
+            <p></p>
+            <h3>web3</h3>
+          </div>
+
+          <div style="display: flex; font-size: 5em" class="justify-around">
+            <div class="r-stack">
+              <div>😥</div>
+              <div class="fragment">🥹</div>
+              <div class="fragment">😄</div>
+            </div>
+            <div class="fragment">🤝</div>
+            <div>😎</div>
+          </div>
         </section>
 
         <section>
@@ -171,12 +207,17 @@
 
         <section>
           <img src="https://jsdzem.pl/wp-content/uploads/2022/09/web3-js.png" />
-          <img class="fragment" src="https://jsdzem.pl/wp-content/uploads/2022/09/ethers-js.png" />
+          <img
+            class="fragment"
+            src="https://jsdzem.pl/wp-content/uploads/2022/09/ethers-js.png"
+          />
         </section>
 
         <section>
-          <pre><code data-trim data-line-numbers="1|2|3|4|5">
-						const provider = new ethers.providers.Web3Provider(window.ethereum);
+          <pre><code data-trim data-line-numbers="1-3|4|5|6|7">
+						const provider = new ethers.providers.Web3Provider(
+              window.ethereum
+            );
 						await provider.send("eth_requestAccounts", []);
 						const signer = provider.getSigner();
 						const contract = new ethers.Contract(address, abi, provider);
@@ -185,65 +226,136 @@
         </section>
 
         <section>
-          <h2>Reading from blockchain</h2>
+          <h2>Reading</h2>
           <ul>
-            <li>reading stands for getting something</li>
-            <li>free 🆓 you don't pay ETH for gas</li>
-            <li>no wallet required, shared node is enough</li>
-            <li>
+            <li class="fragment">free 🆓</li>
+            <li class="fragment">no wallet required</li>
+            <li class="fragment">
               <code>() ⇒ Promise&lt;Result&gt;</code>
             </li>
-            <li>no event emitted</li>
+            <li class="fragment">no event emitted</li>
           </ul>
         </section>
 
         <section>
-          <h2>Writing to blockchain</h2>
+          <h2>Writing</h2>
 
           <ul>
-            <li>writing stands for setting something</li>
-            <li>cost you to pay for gas</li>
-            <li>connected wallet required</li>
-            <li>
-              <code>
-                () ⇒ Promise&lt;{ wait: () ⇒ Promise&lt;Receipt&gt; }&gt;
-              </code>
+            <li class="fragment">cost you to pay for gas</li>
+            <li class="fragment">need to connect a wallet</li>
+            <li class="fragment">
+              <pre><code data-trim>
+                () ⇒ Promise&lt;{ 
+                  wait: () ⇒ Promise&lt;Receipt&gt;
+                }&gt;
+              </code></pre>
             </li>
-            <li>can emit events</li>
+            <li class="fragment">can emit events</li>
           </ul>
         </section>
 
         <section>
-          <h2>MetaMask</h2>
-          <p>*browser plugin screenshot*</p>
+          <img
+            class="r-stretch"
+            src="https://jsdzem.pl/wp-content/uploads/2022/09/metamask.png"
+            alt="MetaMask"
+          />
         </section>
 
         <section>
-          <div style="display: flex; justify-content: space-between">
-            <p>wallet ==</p>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <h2>wallet</h2>
+            <!-- <h2>==</h2> -->
             <div style="text-align: right">
-              <p class="fragment">identity</p>
-              <p class="fragment">account</p>
-              <p class="fragment">owner of tokens</p>
-              <p class="fragment">values</p>
+              <h3 class="fragment fade-in-then-semi-out">identity</h3>
+              <h3 class="fragment fade-in-then-semi-out">account</h3>
+              <h3 class="fragment fade-in-then-semi-out">token owner</h3>
+              <h3 class="fragment">value</h3>
             </div>
           </div>
         </section>
 
         <section>
-          <h2>Challenges for front-end devs</h2>
+          <h2>Challenges <br />for <br />front-end devs</h2>
         </section>
 
         <section>
-          <p>*some weird calculations in JavaScript 😅*</p>
+          <img
+            src="https://jsdzem.pl/wp-content/uploads/2022/09/math.png"
+            alt="JS math"
+          />
         </section>
 
         <section>
-          <p>*cals code and result - side by side*</p>
+          <h2>BigNumber</h2>
+          <p class="fragment">*only integers</p>
         </section>
 
         <section>
-          <p>*issue with primitive obsession - code*</p>
+          <pre><code data-trim>
+            const myBalance = BigNumber.from('8920584203949257369');
+					</code></pre>
+        </section>
+
+        <section>
+          <pre><code data-trim data-line-numbers="1|2|3|1-3">
+            const myBalance = BigNumber.from('8920584203949257369')
+              .div('24342667722')
+              .mul('58407229393064');
+					</code></pre>
+        </section>
+
+        <section>
+          <p style="display: flex;" class="justify-center">
+            <span class="r-stack">
+              <span class="fragment fade-in-then-out">Primitive</span>
+              <span class="fragment">BigNumber</span>
+            </span>
+            &nbsp;Obsession
+          </p>
+          <pre><code data-trim>
+            const collateral = BigNumber.from('5000000000000000000000');
+            const interestRate = BigNumber.from('8920584203949257369');
+            const total = BigNumber.from('5180000000000000000000');
+					</code></pre>
+        </section>
+
+        <section>
+          <pre><code data-trim>
+            function openSwap(amount: BigNumber) {
+              ...
+            }
+					</code></pre>
+        </section>
+        
+        <section>
+          <pre><code data-trim>
+            function openSwap(amount: Total) {
+              ...
+            }
+					</code></pre>
+        </section>
+
+        <section>
+          <pre><code data-trim>
+            type Total = BigNumber & {
+              __brand: 'TOTAL';
+            };
+					</code></pre>
+        </section>
+
+        <section>
+          <pre><code data-trim>
+            BigNumber.from('5000000000000000000000') as Collateral;
+            BigNumber.from('8920584203949257369') as InterestRate;
+            BigNumber.from('5180000000000000000000') as Total;
+					</code></pre>
         </section>
 
         <section>
@@ -278,34 +390,37 @@
         </section>
 
         <section>
-          <table>
-            <tr>
-              <td>UI</td>
-              <td>data</td>
-              <td>events</td>
-            </tr>
-            <tr>
-              <td>React</td>
-              <td>Redux</td>
-              <td>RxJS</td>
-            </tr>
-            <tr>
-              <td colspan="3" style="text-align: center">useDapp</td>
-            </tr>
-          </table>
+          <div>
+            <div style="display: flex;" class="justify-center">
+              <img style="height: 16vh;" src="/svg/react.svg" alt="React.js">
+              <div class="r-stack">
+                <img class="fragment" style="height: 16vh;" src="/svg/redux.svg" alt="Redux" data-fragment-index="1">
+                <p style="font-size: 2.5em;" class="fragment" data-fragment-index="4">❌</p>
+              </div>
+              <div class="r-stack">
+                <img class="fragment" style="height: 16vh;" src="/svg/reactivex.svg" alt="RxJS" data-fragment-index="2">
+                <p style="font-size: 2.5em;" class="fragment" data-fragment-index="5">❌</p>
+              </div>
+            </div>
+            <img class="fragment" src="https://jsdzem.pl/wp-content/uploads/2022/09/usedapp-logo.png" alt="useDapp" data-fragment-index="3">
+          </div>
         </section>
 
         <section>
-          <p>
-            <span>Multicall</span>
-            <span class="fragment">+ block change detecting</span>
-            <span class="fragment">= real time UI</span>
-          </p>
+          <img src="https://jsdzem.pl/wp-content/uploads/2022/09/usedapp.png" alt="useDapp">
         </section>
 
         <section>
-          Testing
-          <p>What do we want to test?</p>
+          <div>
+            <div>
+              <span>Multicall</span>
+              <span class="fragment">+ block change detecting</span>
+            </div>
+            <div class="fragment">
+              <div>=</div>
+              <div>real time UI</div>
+            </div>
+          </div>
         </section>
 
         <section>
@@ -333,10 +448,7 @@
                 data-fragment-index="12"
                 style="margin-bottom: 6%"
               >
-                <span
-									class="fragment fade-out"
-									data-fragment-index="14"
-								>
+                <span class="fragment fade-out" data-fragment-index="14">
                   Run in real browser
                   <span class="fragment" data-fragment-index="13">
                     with real wallet
@@ -380,24 +492,72 @@
             </div>
 
             <div class="fragment" data-fragment-index="15">
-							<br/>
+              <br />
               <p>Cypress + MetaMask = Synpress</p>
-							<br/>
+              <br />
               <p>@testing-library</p>
-							<br/>
+              <br />
               <p>@testing-library</p>
             </div>
           </div>
         </section>
 
-				<section>
-					<p>video with Synpress running</p>
-				</section>
+        <section data-background-iframe="https://www.youtube.com/embed/oiqkLQI5ZNU?controls=0"
+          data-background-interactive>
+        </section>
 
-				<section>
-					Environments
-					<img class="fragment" data-src="https://jsdzem.pl/wp-content/uploads/2022/06/environments.png" alt="Environments" />
-				</section>
+        <section>
+          <style>
+            #env-table {
+              border: 1px solid #FFF;
+            }
+
+            #env-table td {
+              border: 1px solid #FFF;
+              font-size: 0.5em;
+              padding: 1.7em 1em !important;
+              vertical-align: middle;
+            }
+          </style>
+          <h2>Environments</h2>
+          <table id="env-table">
+            <tr>
+              <td>vs</td>
+              <td>private testnet</td>
+              <td>Goerli</td>
+              <td>mainnet</td>
+            </tr>
+            <tr>
+              <td>feature branch</td>
+              <td>development<br /> 💥🪓💣</td>
+              <td>the most convenient ✅</td>
+              <td>integration with external protocols, real data</td>
+            </tr>
+            <tr>
+              <td>develop</td>
+              <td>FE/SC sync</td>
+              <td>E2E 🤖💻📱</td>
+              <td>E2E 💵💵💵</td>
+            </tr>
+            <tr>
+              <td>main</td>
+              <td>❌</td>
+              <td>community can try with fake money</td>
+              <td style="text-align: center;"><strong style="font-size: 1.7em;">PRODUCTION</strong></td>
+            </tr>
+          </table>
+        </section>
+
+        <section>
+          <h2>Demo</h2>
+        </section>
+
+        <section>
+          <img
+            src="https://jsdzem.pl/wp-content/uploads/2022/09/qrcode_lebrande.github.io_.png"
+            alt="QR code to those slides"
+          />
+        </section>
       </div>
     </div>
 
