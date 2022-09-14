@@ -20,10 +20,22 @@
     <div class="reveal">
       <div class="slides">
         <section>
+          <h2>gm</h2>
+
+          <aside class="notes">
+            This is the secret greeting in web3 community<br />
+            What does it mean?<br />
+            Who knows?<br />
+            ...<br />
+            Good Morning!<br />
+          </aside>
+        </section>
+
+        <section>
           <h1>Blockchain Designed Front-End</h1>
 
           <aside class="notes">
-            Blockchains is a thing, that is driving people crazy in 2022<br />
+            Blockchains is that thing, that is driving people crazy in 2022<br />
             I gonna prepare you, MY DEAR AUDIENCE, for 2023<br />
             Right?<br />
             <br />
@@ -96,9 +108,10 @@
             />
   
             <aside class="notes">
-              What button makes this website a web3 one?<br />
+              Let's look at this example app<br />
+              Which button makes this website a web3 one?<br />
               ...<br />
-              This button<br />
+              It's this button<br />
             </aside>
           </div>
         </section>
@@ -147,15 +160,16 @@
           </div>
 
           <aside class="notes">
-            Web 1 gives us reading<br />
-            Web 1 gives us writing<br />
-            but...<br />
-            Data is actually out of user control.<br />
-            ...<br />
-            Web 3 brings the ownership back to the user.<br />
+            To get acces to someting with Web 1 approach<br />
+            you used to have login and password<br />
             <br />
-            Anyway it doesn't matter 😂<br />
-            This talk is not about this<br />
+            With web2 we got posibility to post data<br />
+            like in social media<br />
+            We all do that every day<br />
+            but...<br />
+            All those data you send is actually out of your control.<br />
+            ...<br />
+            Web 3 brings the ownership to the user back.<br />
           </aside>
         </section>
 
@@ -163,11 +177,11 @@
           <div style="display: flex;" class="justify-center">
             <img style="height: 50vh;" src="https://jsdzem.pl/wp-content/uploads/2022/09/kuba-ipor-1-scaled.jpg" alt="Kuba Pusiak">
             <div style="padding: 0 0 0 5vw; text-align: left;">
-              <p>Kuba</p>
+              <p><a href="https://twitter.com/le_brande">Kuba</a></p>
               <p>React, TypeScript, Web3</p>
-              <p>@<a href="https://www.ipor.io/">IPOR Labs</a></p>
-              <p>JS Dżem</p>
+              <p><a href="https://www.ipor.io/">IPOR Labs</a></p>
               <p>TradFi ➡️ DeFi</p>
+              <p><a href="https://www.youtube.com/c/jsdzem"> YouTube: JS Dżem</a></p>
             </div>
           </div>
 
@@ -175,7 +189,7 @@
           <aside class="notes">
             My name is Kuba<br />
             Like Cuba Libre 😂<br />
-            I am regular front-end IT with nothing out of ordinary in my stack: <br />
+            I am regular front-end guy with nothing out of ordinary in my stack: <br />
             Just simple React, and sometimes advanced TypeScript.<br />
             <br />
             So what do I do?<br />
@@ -183,11 +197,13 @@
             I make front-end for IPOR Labs<br />
             We bring something from traditional finance, you may know,<br />
             to decentralized world<br />
+            Also I ran YouTube channel called JS Dżem<br />
           </aside>
         </section>
 
         <section>
           <video
+            class="fragment"
             data-autoplay
             src="https://jsdzem.pl/wp-content/uploads/2022/09/how-did-i-get-to-wb3.mp4"
           ></video>
@@ -197,7 +213,7 @@
             <br />
             *stuck in garage gif*<br />
             <br />
-            Actually my talk is about that<br />
+            This talk is about that<br />
             I started exactly one year ago<br />
             Just like this<br />
           </aside>
@@ -210,7 +226,7 @@
             I gonna talk about front-end for decentralised applications called
             D-Apps<br />
             <br />
-            D-App is an application what deals with blockchain<br />
+            D-App is an application which deals with blockchain<br />
             <br />
             So, let's focus on the front-end part!
           </aside>
@@ -230,13 +246,15 @@
             <br />
             My stack ≠ is not the only right stack<br />
             <br />
-            You operate only on EVM compatible chains<br />
+            We operate only on EVM compatible chains<br />
             like Ethereum, Polygon, Avalanche etc.<br />
             <br />
-            You don't have to know what EVM is and that weird names mean<br />
+            You don't have to know what EVM is<br />
+            and what these weird names mean<br />
             ...<br />
             And hold on for a while<br />
-            Let's answer a few questions before we build something
+            Before we start to build the button<br />
+            Let's answer a one crucial question<br />
           </aside>
         </section>
 
@@ -267,21 +285,14 @@
         </section>
 
         <section>
-          <p>web2 ➡️ backend</p>
-          <p class="fragment">web3 ➡️ blockchain</p>
+          <p>web3 ➡️ blockchain</p>
+          <p class="fragment">web2 ➡️ backend</p>
 
           <aside class="notes">
             Web3 frontend talks to blockchain<br />
             <br />
-            like web2 apps used to talk to backend<br />
-            <br />
-            So<br />
-            <br />
-            Directly? With no backend involved?<br />
-            <br />
-            Yes<br />
-            <br />
-            but…<br />            
+            like every web2 apps used to talk to backend<br />          
+            anyway...<br />
           </aside>
         </section>
 
@@ -290,9 +301,9 @@
           <h3 class="fragment">❌ node.js</h3>
 
           <aside class="notes">
-            We need to have a NODE, which talks to blockchain<br />
+            You need to have a NODE, which talks to blockchain<br />
             <br />
-            Because our browser is not able to do that<br />
+            Because your browser is not able to do that<br />
             <br />
             yet!<br />
             <br />
@@ -322,7 +333,7 @@
           </div>
 
           <aside class="notes">
-            We can have Infura or Alchemy<br />
+            You can have Infura or Alchemy<br />
             <br />
             These are node providers, a Sass services <br />
             with really straight forward user/developer experience<br />
@@ -337,13 +348,12 @@
           <ul>
             <li>✅ read</li>
             <li class="fragment" data-fragment-index="1">✅ write 👛</li>
-            <li class="fragment" data-fragment-index="2">❌ update</li>
+            <li class="fragment" data-fragment-index="2">❌ put</li>
             <li class="fragment" data-fragment-index="2">❌ delete</li>
           </ul>
 
           <aside class="notes">
-            So far, you're able to read blockchain<br />
-            <br />
+            So far, you're able to read from blockchain<br />
             Nothing hard<br />
             <br />
             But<br />
@@ -351,12 +361,10 @@
             When you want to write to blockchain<br />
             you want USERS to use theirs wallet<br />
             <br />
-            So<br />
-            <br />
-            We got read and write <br />
-            As the blockchain is designer as immutable,<br />
+            We already got read and write. <br />
+            As the blockchain is designed as immutable,<br />
             we cannot change anything in our database.<br />
-            blockchain is considered as database though<br />
+            Blockchain is considered as database though<br />
             So<br />
             <br />
             There is no longer PUT or DELETE method in our API
@@ -381,16 +389,16 @@
           </div>
 
           <aside class="notes">
-            *web2 === web3 ?*<br />
+            What is the difference between web2 and web3 front-end?<br />
             <br />
             Almost everithing remains the same<br />
             You talk to a node instead of HTTP server<br />
             <br />
             *web2 gets smile*<br />
             <br />
-            Although, we don’t exclude web2 infrastructure from existing in
-            parallel<br />
-            You can mix web3 with everything web2 offers<br />
+            Although, we don't exclude web2 infrastructure<br />
+            from existing in parallel<br />
+            You can mix web3 with everything web2 offers to you<br />
           </aside>
         </section>
 
@@ -398,15 +406,12 @@
           <p>0x5981ac4718e35aE03F5533290eD204a767148450</p>
 
           <aside class="notes">
-            How to deal with blockchain?<br />
+            This is an address<br />
+            a reference to your smart contract or wallet<br />
             <br />
-            *Smart contract address*<br />
-            <br />
-            Smart contract address - a reference to your smart contract<br />
-            <br />
-            To get smart contract address<br />
-            Ask your smart contract developer about it<br />
-            Or find it in resources, protocol documentation<br />
+            To get a smart contract address<br />
+            Ask your smart contract developer<br />
+            Or find it in resources or protocol documentation<br />
           </aside>
         </section>
 
@@ -446,7 +451,9 @@
             You may already know what API is<br />
             It stands for Application Programming Interface<br />
             <br />
-            ABI is a Application Binary Interface<br />
+            In web3 we have something similar you need to get<br />
+            an ABI<br />
+            ABI is an Application Binary Interface<br />
           </aside>
         </section>
 
@@ -465,7 +472,18 @@
             src="https://jsdzem.pl/wp-content/uploads/2022/09/ethers-js.png"
           />
 
-          <aside class="notes">Install a library</aside>
+          <aside class="notes">
+            You defenitelly want to have a web3 library<br />
+            You don't want to reinvent the wheel<br /> 
+            A library hepls you encrypt and decrypt a data<br /> 
+            It's also useful for computations on frontend<br />
+            as pure JS is weak in terms of Math, sorry<br />
+            and it helps you to deal with wallet<br />
+            <br />
+            The are two most common libraries<br />
+            web3 and ethers.js<br />
+            Personally, I like to use ethers.js<br />
+          </aside>
         </section>
 
         <section>
@@ -479,26 +497,24 @@
         abi,
         provider,
       );
-						await contract.name()
+						await contract.mintMyNFT()
 					</code></pre>
 
           <aside class="notes">
-            Initialize a provider<br />
+            This example is written with ethers.js<br />
+            <br />
+            1. Initialize a provider<br />
             It could be a wallet or node<br />
             <br />
-            *code example - one or a few lines*<br />
+            3. Check what accounts you have access to<br />
             <br />
-            Check what accounts you have access to<br />
-            Already having the address and the ABI<br />
-            ...and the provider<br />
-            <br />
-            You can areate a smart contract class instance<br />
+            5. Then can create a smart contract class instance<br />
             This is abstraction of your smart contract in JS<br />
+            You need to have adress, abi and provider.
             <br />
-            then just call a method<br />
-            read method<br />
+            then just call a method - mintMyNFT<br />
             <br />
-            Remember there are two types of methods..<br />
+            There are two types of methods..<br />
           </aside>
         </section>
 
@@ -512,6 +528,15 @@
             </li>
             <li class="fragment">no event emitted</li>
           </ul>
+
+          <aside class="notes">
+            Reading is free<br />
+            You don't need wallet to read, a node is enough<br />
+            If you call read method it gives you Promise<br />
+            When you await that Promise<br />
+            You get the result<br />
+            During reading there is no event emited<br />
+          </aside>
         </section>
 
         <section>
@@ -529,6 +554,26 @@
             </li>
             <li class="fragment">can emit events</li>
           </ul>
+
+          <aside class="notes">
+            Writing can be expensive<br />
+            In order to write you pay for gas<br />
+            in ETH or any other native currency<br />
+            It's a transaction fee<br />
+            <br />
+            Wallet is required, someone have to pay<br />
+            <br />
+            It's kinda double promise<br />
+            When user call an action to write something in blockchain<br />
+            Metamask wallet prompts them to:<br />
+            accept the transaction and fee amount<br />
+            This the first Promise<br />
+            <br />
+            When you get a receipt<br />
+            it means your transaction is already mined<br />
+            <br />
+            It can emmit events<br />
+          </aside>
         </section>
 
         <section>
@@ -540,21 +585,20 @@
           />
 
           <aside class="notes">
-            Your first wallet - MetaMask<br />
+            The first wallet you probably meet in every single web3 curse is MetaMask<br />
+            It's a browser plugin<br />
             <br />
-            *browser plugin screenshot*<br />
-            <br />
-            A browser plugin<br />
-            You deal with its API<br />
-            I hold above $300 here<br />
-            Pretty nice...<br />
-            <br />
-            MATIC is a native currency<br />
+            I am connected to Polygon blockchain
+            MATIC is a native currency of that one<br />
             I pay for gas within<br />
             <br />
-            Tips:<br />
-            Security - you cannot refresh credentials<br />
-            If you lose your keys, you cannot revoke them<br />
+            Down below...
+            I hold above $300<br />
+            Pretty nice...<br />
+            <br />
+            A have tips for you:<br />
+            It's about security - you cannot refresh credentials<br />
+            If you lose your private keys, you cannot revoke them<br />
             Be familiar with the best practices<br />
           </aside>
         </section>
@@ -568,7 +612,7 @@
             "
           >
             <h2>wallet</h2>
-            <!-- <h2>==</h2> -->
+
             <div style="text-align: right">
               <h3 class="fragment fade-in-then-semi-out">identity</h3>
               <h3 class="fragment fade-in-then-semi-out">account</h3>
@@ -578,37 +622,42 @@
           </div>
 
           <aside class="notes">
-            *wallet == identity == account == owner of tokens == value*<br />
+            Howeverm what is a wallet in general?<br />
             <br />
-            Your wallet is your web3 ID<br />
-            It’s your account, in terms of web2<br />
+            It's your web3 ID<br />
+            Its your account, in terms of web2<br />
             That also means you can own tokens<br />
-            Tokens, to be worth your attention, need to refer to a VALUE you
-            want to own<br />
+            Tokens, to be worth your attention,<br />
+            need to refer to a VALUE you want to own<br />
           </aside>
         </section>
 
         <section>
           <h2>
-            Challenges <br /><span class="fragment">for</span> <br />
-            <span class="fragment">front-end devs</span>
+            Challenges <br />for <br /> front-end devs
           </h2>
+
+          <aside class="notes">
+            What challenges you meet building interface<br />
+            for web front-ends?<br />
+          </aside>
         </section>
 
         <section>
           <img
+            class="fragment"
             src="https://jsdzem.pl/wp-content/uploads/2022/09/math.png"
             alt="JS math"
           />
 
           <aside class="notes">
-            Aritmetic<br />
+            Fist one is aritmetic<br />
             <br />
             *some weird calculations in JavaScript 😅*<br />
             <br />
             We love numbers in JavaScript ♥️<br />
             <br />
-            Because… It’s just… unpredictable<br />
+            Because… It's just… unpredictable<br />
             <br />
             But…<br />
           </aside>
@@ -616,16 +665,15 @@
 
         <section>
           <h2>BigNumber</h2>
+          <p class="fragment">*18 decimals precisions</p>
           <p class="fragment">*only integers</p>
 
           <aside class="notes">
-            It’s already Solved by BigNumber library<br />
+            All your problems solves BigNumber library<br />
             <br />
-            Even 18 decimals precision<br />
+            You may need 18 decimals precision and even more<br />
             <br />
-            Numbers stored in strings<br />
-            <br />
-            Only integers ❤️<br />
+            It supports only integers ❤️<br />
           </aside>
         </section>
 
@@ -633,6 +681,12 @@
           <pre><code data-trim class="language-ts">
             const myBalance = BigNumber.from('8920584203949257369');
 					</code></pre>
+
+          <aside class="notes">
+            It's looks like this<br />
+            I pass a numeric string to the constructor<br />
+            Then a can perform math operations<br />            
+          </aside>
         </section>
 
         <section>
@@ -643,12 +697,20 @@
 					</code></pre>
 
           <aside class="notes">
-            I got a quiz for you… really.<br />
+            It's chainable and immputable<br />
+            for your convenience of course<br /> 
+            <br /> 
+            I got a quiz for you…<br />
             <br />
-            Where is a bug in this code?<br />
-            <br />
+            **Where is a bug in this code?<br />
             Multiply first, then divide 😆<br />
-            Otherwise you lose precision<br />
+            Otherwise you'll lose precision<br />
+            <br />
+            ** Why string number?<br />
+            Because in case of native JS number type<br />
+            There is a limit<br />
+            However sting is just string, there is no limit<br />
+            You can put as long number as you want<br />
           </aside>
         </section>
 
@@ -667,27 +729,24 @@
 					</code></pre>
 
           <aside class="notes">
-            Primitive obsession - Everything is a number<br />
-            Actually BigNumber obsession - Everything is a BigNumber type<br />
+            You can get obsessed<br />
+            With the Bitcoin price? No?<br />
             <br />
-            You need to know what each number means<br />
-            Sometimes number ≠ number,<br />
-            string ≠ string,<br />
-            BigNumber ≠  the same BigNumber<br />
-            <br />
-            branding<br />
+            I mean primitive obsession<br />
+            Or rather BigNumber obsession<br />
+            Everything is a BigNumber type<br />
           </aside>
         </section>
 
         <section>
           <div class="r-stack">
             <pre><code data-trim class="language-ts">
-            function openSwap(amount: BigNumber) {
+            function openSwap(total: BigNumber) {
               ...
             }
 					</code></pre>
           <pre class="fragment"><code data-trim class="language-ts">
-            function openSwap(amount: Total) {
+            function openSwap(total: Total) {
               ...
             }
 					</code></pre>
@@ -697,6 +756,13 @@
               __brand: 'TOTAL';
             };
 					</code></pre>
+
+          <aside class="notes">
+            Sometimes you want to tell a function<br />
+            to be not allowed to receive any BigNuber<br />
+            It should expect a total to be passed<br />
+            You can achieve that with the branding technique<br />
+          </aside>
         </section>
 
         <section>
@@ -705,13 +771,18 @@
             BigNumber.from('8920584203949257369') as InterestRate;
             BigNumber.from('5180000000000000000000') as Total;
 					</code></pre>
+
+          <aside class="notes">
+            All those BigNumbers are not a BigNumber type any more<br />
+            Each of them has its own type<br />
+          </aside>
         </section>
 
         <section>
           <h2>Real time UI</h2>
 
           <aside class="notes">
-            Real time data<br />
+            How to get real time UI<br />
             <br />
             Everything is about:<br />
             <br />
@@ -731,22 +802,12 @@
           </ul>
 
           <aside class="notes">
-              *Imperative approach - the old way*<br />
-              <br />
-              refresh data in relevant interval<br />
-              update when transaction transaction affected your data<br />
-              filter redundant calls<br />
-              manage priority<br />
-              <br />
-              My imperative approach is:<br />
-              <br />
-              refresh data in relevant interval<br />
-              <br />
-              update when transaction transaction affected your data<br />
-              <br />
-              filter redundant calls<br />
-              <br />
-              manage priority<br />
+            The old, imperative approach is to<br />
+            <br />
+            refresh data in relevant interval,<br />
+            update when transaction affects your data,<br />
+            filter redundant calls,<br />
+            and manage priority<br />
           </aside>
         </section>
 
@@ -769,7 +830,7 @@
             <br />
             In blockchain, data changes over block<br />
             <br />
-            This is discrete mathematics<br />
+            Nothing is happening between two consecutive blocks<br />
           </aside>
         </section>
 
@@ -823,37 +884,27 @@
           </div>
 
           <aside class="notes">
-            <React logo appearing>
-              Let’s have React<br />
+              I guess you'd like to use a framework<br />
               <br />
-              and what next, you know React is mostly UI         <br />        
-              I wants to have some cleaver approach for data menagment<br />
+              * Let's have React<br />
               <br />
-              *Redux logo appearing*<br />
+              you know, React is mostly for UI<br />        
+              I want to bring some cleaver approach for data menagment<br />
               <br />
-              Ok, let’s try Redux<br />
-              I tried redux ❌<br />
+              * I tried redux ❌<br />
               <br />
-              *RxJS logo appearing*<br />
-              <br />
-              I also was thinking about RxJS<br />
-              In case when I would need be more reactive, more flexible<br />
+              * I also was thinking about RxJS<br />
+              In case when I would need be more reactive<br />
               but…<br />
               <br />
-              *useDapp logo appearing*
-              <br />
-              useDapp - my choice - I love them - You know why?
-              I watched a few videos on YT when they, useDapp authors, talking about theirs library
-              <br />
-              They say::      <br />        
-              we tried Redux - not succeded<br />
-              <❌ Redux><br />
-              <br />
+              * I discovered useDapp <br />
+              And I have loved it - You know why?<br />
+              They say:<br />        
+              We tried Redux - not succeded<br />
+              ❌ Redux<br />
               we tried RxJS - And?<br />
-              <❌ RxJS><br />
+              ❌ RxJS<br />
               NOT SUCCEEDED 😂<br />
-              <br />
-              Wow that’s me, my story!<br />
           </aside>
         </section>
 
@@ -862,6 +913,10 @@
             src="https://jsdzem.pl/wp-content/uploads/2022/09/usedapp.png"
             alt="useDapp"
           />
+
+          <aside class="notes">
+            Why is this game changer?
+          </aside>
         </section>
 
         <section>
@@ -877,11 +932,13 @@
           </div>
 
           <aside class="notes">
-            *Multicall*<br />
+            *It performs multicall<br />
             <br />
-            Squash several calls into one - like GraphQl does<br />
-            Block change detecting - like useQuery does<br />
-            Multicall + block change detecting = always up to date UI<br />
+            It squashes several calls into one<br />
+            like GraphQl does<br />
+            Also it detects incoming blocks<br />
+            like useQuery can run in interval<br />
+            You don't need to care about noting I mentioned before<br />
           </aside>
         </section>
 
@@ -964,41 +1021,30 @@
           </div>
 
           <aside class="notes">
-            **Testing & Debugging**<br />
-            What to test against?<br />
+            Do you know this pyramid?<br />
+            This scheme?<br />
             <br />
-            *Unit tests*<br />
-            Smart contracts covered on Solidity level<br />
-            there's no difference if you use web3<br />
-            unit test should be blockchain unaware, detached<br />
-            if you use React, just test components or functions<br />
+            It's the test level scheme.<br />
+            From the bottom: unit, integration and E2E tests<br />
             <br />
-            *Integrations tests*<br />
+            Smart contracts are covered on Solidity level<br />
+            I want to test components and functions
+            no difference, like any other app<br />
             <br />
-            What should I get involved to my test pipeline?<br />
-            You need to define what parts of infrastructure you want involved<br />
-            local blockchain instance (Geth, Ganache)<br />
-            facade for all blockchain related communication<br />
-            implementation agnostic<br />
-            check how front-end deals with errors<br />
+            For integration suite<br />
+            I have to answer a question<br />
+            What parts I want involved in pipeline?<br />
+            either local fake blockchain instance<br />
+            or facade for all blockchain related communication<br />
             <br />
-            *E2E tests*<br />
-            Run in real browser<br />
+            Finally you run tests in real browser<br />
             with real wallet<br />
             <br />
-            *Summary*<br />
-            <br />
-            Unit and integration tests - testing library<br />
-            Reproduce real user experience<br />
-            Manual testing<br />
-            Cypress + MetaMask = Synpress<br />
+            I use testing library for integration and unit testing<br />
+            To E2E community brings a plugin for Cypress called Synpress<br />
+            That plagin provides support for Metamask wallet<br />
+            So you no longer need to test it manualy<br />
           </aside>
-        </section>
-
-        <section
-          data-background-iframe="https://www.youtube.com/embed/oiqkLQI5ZNU?controls=0"
-          data-background-interactive
-        >
         </section>
 
         <section>
@@ -1012,63 +1058,96 @@
               font-size: 0.5em;
               padding: 1.7em 1em !important;
               vertical-align: middle;
+              text-align: center;
             }
           </style>
 
-          <h2>Environments</h2>
+          <h2>
+            <span class="fragment" data-fragment-index="10">
+              Branch
+            </span>
+            <span class="fragment" data-fragment-index="20">
+              vs Environment
+            </span>
+          </h2>
           <table id="env-table">
             <tr>
-              <td>vs</td>
-              <td>private testnet</td>
-              <td>Goerli</td>
-              <td>mainnet</td>
+              <td class="fragment" data-fragment-index="20">vs</td>
+              <td>
+                <div class="fragment" data-fragment-index="20">
+                  private testnet
+                </div>
+              </td>
+              <td>
+                <div class="fragment" data-fragment-index="20">
+                  Goerli
+                </div>
+              </td>
+              <td>
+                <div class="fragment" data-fragment-index="20">
+                  mainnet
+                </div>
+              </td>
             </tr>
             <tr>
-              <td>feature branch</td>
-              <td>
+              <td class="fragment" data-fragment-index="10">feature branch</td>
+              <td class="fragment" data-fragment-index="30">
                 development<br />
                 💥🪓💣
               </td>
-              <td>the most convenient ✅</td>
-              <td>integration with external protocols, real data</td>
+              <td class="fragment" data-fragment-index="40">the most convenient ✅</td>
+              <td class="fragment" data-fragment-index="50">integration with external protocols, real data</td>
             </tr>
             <tr>
-              <td>develop</td>
-              <td>FE/SC sync</td>
-              <td>E2E 🤖💻📱</td>
-              <td>E2E 💵💵💵</td>
+              <td class="fragment" data-fragment-index="10">develop</td>
+              <td class="fragment" data-fragment-index="60">FE/SC sync</td>
+              <td class="fragment" data-fragment-index="70">E2E 🤖💻📱</td>
+              <td class="fragment" data-fragment-index="80">E2E 💵💵💵</td>
             </tr>
             <tr>
-              <td>main</td>
-              <td>❌</td>
-              <td>community can try with fake money</td>
-              <td style="text-align: center">
+              <td class="fragment" data-fragment-index="10">main</td>
+              <td class="fragment" data-fragment-index="90">❌</td>
+              <td class="fragment" data-fragment-index="100">community can try with fake money</td>
+              <td class="fragment" data-fragment-index="110">
                 <strong style="font-size: 1.7em">PRODUCTION</strong>
               </td>
             </tr>
           </table>
 
           <aside class="notes">
-            Startups deploy theirs smart contracts to testnet to get people engaged from the very begging<br />
+            Lets test you code from specific branch<br />
+            against an envirnoment where you pushed smart contracts<br />
             <br />
-            Feedback == Free QA 💰<br />
+            Feature branch is for developing<br />
+            Private testnet is your battlefield<br />
+            I can also develop on Goerli public testnet<br />
+            On mainnet - integration external protocols<br />
+            <br />
+            I used to run develop branch against local chain to sync FE/SC<br />
+            Running develop branch on Goerli testnet is right for E2E testing<br />
+            You can also run against mainnet, but it will charge you real money<br />
+            <br />
+            Running main branch on Goerli testnet makes you community able to try your dapp with fake money<br />
+            We're in touch with our comminity on our Discord channel
+            They give us feedback, they are our best QAs :)<br />
+            And finally we got a looked forward production<br />
           </aisde>
         </section>
 
         <section>
           <h2>Error logging</h2>
-          <p><a href="http://sentry.io/">sentry.io</a></p>
-          <p><a href="https://logrocket.com/">Log Rocket</a></p>
+          <div class="fragment">
+            <p><a href="http://sentry.io/">sentry.io</a></p>
+            <p><a href="https://logrocket.com/">Log Rocket</a></p>
+          </div>
 
           <aside class="notes">
-            *diagram - web2 vs web3 architecture*<br />
-            <br />
+            Since your customer connected their wallet<br />
+            You have no idea what happens in the browser<br />
             No server logs<br />
-            No idea what's on client side<br />
             <br />
-            *solutions appear*<br />
-            <br />
-            use sentry.io or Log Rocket<br />
+            *So use event loggers like sentry.io or Log Rocket<br />
+            REMEMBER! DO NOT SEND ANY SENSITIVE DATA!<br />
           </aside>
         </section>
 
@@ -1076,42 +1155,38 @@
           <h2>How mouch cost developing?</h2>
 
           <aside class="notes">
-            you already know tokens, and how much it's worth<br />
-          You know gas, paid in ETH<br />
-          Of courese, You have to pay for deploying to production<br />
-          to production<br />
-          <br />
-          however<br />
-          today<br />
-          <br />
-          We got testnets!<br />
-          No longer pay for test your stuff<br />
-          Really did you thing we charge devs for writing code?<br />
-          <br />
-          it's completely free<br />
-          <br />
-          Who wants web3 developing?<br />
-          You?! Don't you?<br />
-          Don't YOU?<br />
-          Don't YOU?<br />
-          <br />
-          Really, donna want?<br />
-          <br />
-          come on!<br />
-          <p>🆓</p>
+            You know gas, paid in ETH<br />
+            Of courese, You have to pay for deploying to production<br />
+            <br />
+            however<br />
+            We got testnets!<br />
+            with free token streams - faucets<br />
+            There are plenty of Sass services with a free tier<br />
+            I don't remember I paid for anything up front.<br />
+            <br />
+            Really did you thing<br />
+            we charge devs for writing code?!<br />
           </aside>
         </section>
 
         <section>
-          <h2>Demo</h2>
-        </section>
-
-        <section>
-          <h2>get the slides</h2>
+          <h2>grab the slides</h2>
           <img
             src="https://jsdzem.pl/wp-content/uploads/2022/09/qrcode_lebrande.github.io_.png"
             alt="QR code to those slides"
           />
+
+          <aside class="notes">
+            Who wants web3 developing?<br />
+            You?! Don't you?<br />
+            Don't YOU?<br />
+            Don't YOU?<br />
+            <br />
+            Really, donna want?<br />
+            <br />
+            come on!<br />
+            <p>🆓</p>
+          </aside>
         </section>
       </div>
     </div>
