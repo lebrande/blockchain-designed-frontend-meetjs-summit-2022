@@ -1,0 +1,45 @@
+/**
+ * IPOR theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #020920;
+$mainFont: 'Poppins', sans-serif;
+$headingFont: 'Poppins', Impact, sans-serif;
+$headingTextTransform: unset;
+$linkColor: #40A8D8;
+$selectionBackgroundColor: #F0743D;
+$headingFontWeight: 600;
+$headingLetterSpacing: -0.05em;
+
+$heading1Size: 2.4em;
+$heading2Size: 2em;
+$heading3Size: 1.7em;
+$heading4Size: 1.00em;
+
+// Background generator
+@mixin bodyBackground() {
+	@include horizontal-gradient(#020920, #041139);
+}
+
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#fff);
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------

@@ -7,11 +7,11 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
-    <title>reveal.js</title>
+    <title>Blockchain Designed Front-End | Jakub Pusiak</title>
 
     <link rel="stylesheet" href="dist/reset.css" />
     <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="dist/theme/black.css" />
+    <link rel="stylesheet" href="dist/theme/ipor.css" />
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css" />
@@ -20,57 +20,281 @@
     <div class="reveal">
       <div class="slides">
         <section>
-          <h1>Blockchain designed front-end</h1>
+          <h2>gm</h2>
         </section>
 
         <section>
-          <h2>*transition graph web1 - web2 - web3*</h2>
+          <h1>Blockchain Designed Front-End</h1>
+
+          <aside class="notes">
+            Blockchains is that thing, that is driving people crazy in 2022<br />
+            I gonna prepare you, MY DEAR AUDIENCE, for 2023<br />
+            Right?<br />
+            <br />
+            What does your client want? <br />
+            They may approach you like this:<br />
+          </aside>
         </section>
 
         <section>
-          <img src="https://jsdzem.pl/wp-content/uploads/2022/09/what-do-i-do.jpeg" />
+          <style>
+            .text-comic {
+              color: #222;
+              padding-bottom: 4vh;
+              z-index: 50;
+            }
+          </style>
+
+          <div style="display: flex; padding: 0 3vw;" class="justify-around">
+            <div class="r-stack">
+              <img style="width: 40vh; transform: scaleX(1.5);" src="https://jsdzem.pl/wp-content/uploads/2022/09/cloud-sentence-placeholder.png" alt="question">
+              <p class="fragment text-comic" data-fragment-index="10">
+                <span class="fragment fade-out" data-fragment-index="30">
+                  web3 now
+                </span>
+              </p>
+              <p class="fragment text-comic" data-fragment-index="30">
+                <span class="fragment fade-out" data-fragment-index="50">
+                  you tell me!
+                </span>
+              </p>
+              <p class="fragment text-comic" data-fragment-index="50">♥️</p>
+            </div>
+            <div class="r-stack">
+              <img style="width: 40vh; transform: rotateY(180deg) scaleX(1.5); color: #222;" src="https://jsdzem.pl/wp-content/uploads/2022/09/cloud-sentence-placeholder.png" alt="question">
+              <p class="fragment text-comic" data-fragment-index="20">
+                <span class="fragment fade-out" data-fragment-index="40">
+                  feature?
+                </span>
+              </p>
+              <p class="fragment text-comic" data-fragment-index="40">
+                <span class="fragment fade-out" data-fragment-index="60">
+                  button?
+                </span>
+              </p>
+              <p class="fragment text-comic" data-fragment-index="60">♥️</p>
+            </div>
+          </div>
+          <div style="display: flex;" class="justify-between">
+            <img style="width: 30vh;" src="https://jsdzem.pl/wp-content/uploads/2022/09/steve-cartoon.png" alt="Steve">
+            <img style="width: 30vh;" src="https://jsdzem.pl/wp-content/uploads/2022/09/you-wojak.png" alt="Wojak">
+          </div>
+
+          <aside class="notes">
+            Hey you! Yes you! I want web3 stuff in my website. NOW<br />
+            So… what features you want? <br />
+            You tell me! You're an expert!<br />
+            … Maybe let's make a button? <br />
+            Amazing! How did you get that?!<br />
+          </aside>
         </section>
 
-        <section>*sketch of front-end UI*</section>
+        <section>
+          <div class="r-stack">
+            <img
+              src="https://jsdzem.pl/wp-content/uploads/2022/09/connect-wallet-button-not-highlighted.png"
+            />
+            <img
+              class="fragment"
+              src="https://jsdzem.pl/wp-content/uploads/2022/09/connect-wallet-button.png"
+            />
+  
+            <aside class="notes">
+              Let's look at this example app<br />
+              Which button makes this website a web3 one?<br />
+              ...<br />
+              It's this button<br />
+            </aside>
+          </div>
+        </section>
 
         <section>
-          <!-- How did I get into web3? -->
-          <video data-autoplay src="https://jsdzem.pl/wp-content/uploads/2022/09/how-did-i-get-to-wb3.mp4"></video>
+          <img
+            src="https://jsdzem.pl/wp-content/uploads/2022/09/web3-signin.png"
+            alt="web 3 sign in"
+          />
+
+          <aside class="notes">
+            The most wanted feature is this button<br />
+            Connect wallet button<br />
+            Without that button,<br />
+            in my opinion?<br />
+            I don't find your app a web3 one<br />
+            ...<br />
+            This button is crucial<br />
+            You may wonder why?<br />
+          </aside>
+        </section>
+
+        <section>
+          <div style="display: flex" class="justify-around">
+            <div>
+              <h3>web 1</h3>
+              <img
+                src="https://jsdzem.pl/wp-content/uploads/2022/09/web1-signin.png"
+                alt="web 1 sign in"
+              />
+            </div>
+            <div class="fragment">
+              <h3>web 2</h3>
+              <img
+                src="https://jsdzem.pl/wp-content/uploads/2022/09/web2-signin.png"
+                alt="web 2 sign in"
+              />
+            </div>
+            <div class="fragment">
+              <h3>web 3</h3>
+              <img
+                src="https://jsdzem.pl/wp-content/uploads/2022/09/web3-signin.png"
+                alt="web 3 sign in"
+              />
+            </div>
+          </div>
+
+          <aside class="notes">
+            To get acces to someting with Web 1 approach<br />
+            you used to have login and password<br />
+            <br />
+            With web2 we got posibility to post data<br />
+            like in social media<br />
+            We all do that every day<br />
+            but...<br />
+            All those data you send is actually out of your control.<br />
+            ...<br />
+            Web 3 brings the ownership to the user back.<br />
+          </aside>
+        </section>
+
+        <section>
+          <div style="display: flex;" class="justify-center">
+            <img style="height: 50vh;" src="https://jsdzem.pl/wp-content/uploads/2022/09/kuba-ipor-1-scaled.jpg" alt="Kuba Pusiak">
+            <div style="padding: 0 0 0 5vw; text-align: left;">
+              <p><a href="https://twitter.com/le_brande">Kuba</a></p>
+              <p>React, TypeScript, Web3</p>
+              <p><a href="https://www.ipor.io/">IPOR Labs</a></p>
+              <p>TradFi ➡️ DeFi</p>
+              <p><a href="https://www.youtube.com/c/jsdzem"> YouTube: JS Dżem</a></p>
+            </div>
+          </div>
+
+
+          <aside class="notes">
+            My name is Kuba<br />
+            I am regular front-end guy with nothing out of ordinary in my stack: <br />
+            Just simple React, and sometimes advanced TypeScript.<br />
+            <br />
+            So what do I do?<br />
+            <br />
+            I make front-end for IPOR Labs<br />
+            We bring something from traditional finance, you may know,<br />
+            to decentralized world<br />
+            Also I cunduct YouTube channel called JS Dżem<br />
+          </aside>
+        </section>
+
+        <section>
+          <video
+            class="fragment"
+            data-autoplay
+            src="https://jsdzem.pl/wp-content/uploads/2022/09/how-did-i-get-to-wb3.mp4"
+          ></video>
+
+          <aside class="notes">
+            How did I get into web3?<br />
+            <br />
+            *stuck in garage gif*<br />
+            <br />
+            This talk is about that<br />
+            I started exactly one year ago<br />
+            Just like this<br />
+          </aside>
+        </section>
+
+        <section>
+          <h2>dApps</h2>
+
+          <aside class="notes">
+            I gonna talk about front-end<br />
+            for decentralised applications called D-Apps<br />
+            <br />
+            D-App is an application which uses blockchain<br />
+            <br />
+            So, let's focus on the front-end part!
+          </aside>
         </section>
 
         <section>
           <h2>Disclaimer</h2>
           <ul>
-            <li>My stack ≠ is not the only right stack</li>
-            <li>No smart contract coding, no Solidity language</li>
-            <li>EVM compatible chains</li>
+            <li class="fragment">
+              My stack <span class="fragment">= React.js</span>
+            </li>
+            <li class="fragment">EVM compatible chains</li>
           </ul>
+
+          <aside class="notes">
+            *Before we get off the ground - one DISCLAIMER<br />
+            <br />
+            My stack ≠ is not the only right stack<br />
+            <br />
+            We operate only on EVM compatible chains<br />
+            EVM means Ethereum Virtual Machine
+            You don't have to know what EVM is<br />
+            ...<br />
+            And hold on for a while<br />
+            Before we start to build the button<br />
+            Let's answer a one crucial question<br />
+          </aside>
         </section>
 
         <section>
           <h2>Why blockchain?</h2>
           <ul>
-            <li>Provides ownership out of the box</li>
-            <li>Ready to use platform</li>
-            <li>Open Source</li>
+            <li class="fragment">ready to use platform</li>
+            <li class="fragment">ownership out of the box</li>
+            <li class="fragment">open source</li>
           </ul>
+
+          <aside class="notes">
+            It's Ready to use platform
+            <br />
+            We can treat blockchain as a deterministic platform<br />
+            where everyone can participate permissionless<br />
+            <br />
+            *Provides ownership out of the box*<br />
+            <br />
+            User can prove they own something<br />
+            because they hold a token in their wallet<br />
+            The magic happens thanks to public-key cryptography<br />
+            <br />
+            Most the code is going open source<br />
+          </aside>
         </section>
 
         <section>
-          <div class="r-stack">
-            <img src="https://jsdzem.pl/wp-content/uploads/2022/09/connect-wallet-button-not-highlighted.png" />
-            <img class="fragment" src="https://jsdzem.pl/wp-content/uploads/2022/09/connect-wallet-button.png" />
-          </div>
-        </section>
-
-        <section>
-          <p>web2 ➡️ backend</p>
           <p>web3 ➡️ blockchain</p>
+          <p class="fragment">web2 ➡️ backend</p>
+
+          <aside class="notes">
+            Web3 frontend talks to blockchain<br />
+            <br />
+            like every average web2 apps used to talk to backend<br />    
+            <br />      
+            But your browser cannot call blockchain on its own<br />
+          </aside>
         </section>
 
         <section>
-          <h2><span>a</span> node</h2>
-          <h3>❌ node.js</h3>
+          <h2><span class="fragment">a</span> node</h2>
+          <h3 class="fragment">❌ node.js</h3>
+
+          <aside class="notes">
+            You need to have a NODE, which talks to blockchain<br />
+            <br />
+            What is A NODE? And how to get it?<br />
+            <br />
+            Don't confuse it with NODE.JS<br />
+          </aside>
         </section>
 
         <section>
@@ -91,43 +315,88 @@
               />
             </div>
           </div>
+
+          <aside class="notes">
+            You can have Infura or Alchemy account<br />
+            <br />
+            These are node providers, Sass services<br />
+            with really straight forward user experience<br />
+            <br />
+            Just create an account, copy-paste the link and boom<br />
+            <br />
+            Done!
+          </aside>
         </section>
 
         <section>
           <ul>
             <li>✅ read</li>
-            <li class="fragment">✅ write 👛</li>
-            <li class="fragment">❌ update</li>
-            <li class="fragment">❌ delete</li>
+            <li class="fragment" data-fragment-index="1">✅ write 👛</li>
+            <li class="fragment" data-fragment-index="2">❌ put</li>
+            <li class="fragment" data-fragment-index="2">❌ delete</li>
           </ul>
+
+          <aside class="notes">
+            So far, you're able to read from blockchain<br />
+            Nothing hard<br />
+            <br />
+            But<br />
+            <br />
+            When you want to write to blockchain<br />
+            you want USERS to use theirs wallet<br />
+            <br />
+            We already got read and write. <br />
+            As the blockchain is designed as immutable,<br />
+            we cannot change anything in our database.<br />
+            Blockchain is considered as database though<br />
+            So<br />
+            <br />
+            There is no longer PUT or DELETE method in our API
+          </aside>
         </section>
 
         <section>
-          <table>
-            <tr>
-              <td>web2</td>
-              <td>web3</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="r-stack">
-                  <div>😥</div>
-                  <div class="fragment">🥹</div>
-                  <div class="fragment">😄</div>
-                </div>
-              </td>
-              <td>😎</td>
-            </tr>
-            <tr>
-              <td colspan="2" class="fragment" style="text-align: center">
-                🤝
-              </td>
-            </tr>
-          </table>
+          <div style="display: flex" class="justify-around">
+            <h3>web2</h3>
+            <p></p>
+            <h3>web3</h3>
+          </div>
+
+          <div style="display: flex; font-size: 5em" class="justify-around">
+            <div class="r-stack">
+              <div>😥</div>
+              <div class="fragment">🥹</div>
+              <div class="fragment">😄</div>
+            </div>
+            <div class="fragment">🤝</div>
+            <div>😎</div>
+          </div>
+
+          <aside class="notes">
+            What is the difference between web2 and web3 front-end?<br />
+            <br />
+            *web2 gets smile*<br />
+            Almost everithing remains the same<br />
+            You talk to a node instead of HTTP server<br />
+            <br />
+            *web2 gets smile*<br />
+            Although, we don't exclude web2 infrastructure<br />
+            from existing in parallel<br />
+            You can mix web3 with everything web2 offers to you<br />
+          </aside>
         </section>
 
         <section>
           <p>0x5981ac4718e35aE03F5533290eD204a767148450</p>
+
+          <aside class="notes">
+            This is an address<br />
+            a reference to your smart contract or wallet<br />
+            <br />
+            To get a smart contract address<br />
+            Chase your smart contract developer<br />
+            Or find it in resources or protocol documentation<br />
+          </aside>
         </section>
 
         <section>
@@ -161,93 +430,350 @@
             </p>
             <p class="fragment" data-fragment-index="2">schema</p>
           </div>
+
+          <aside class="notes">
+            You may already know what API is<br />
+            It stands for Application Programming Interface<br />
+            <br />
+            In web3 we have something similar<br />
+            an ABI<br />
+            ABI is an Application Binary Interface<br />
+          </aside>
         </section>
 
         <section>
           <div style="max-height: 65vh; overflow: scroll">
             <script src="https://gist.github.com/veox/8800debbf56e24718f9f483e1e40c35c.js"></script>
           </div>
+
+          <aside class="notes">ABI is a schema of you smart contract</aside>
         </section>
 
         <section>
           <img src="https://jsdzem.pl/wp-content/uploads/2022/09/web3-js.png" />
-          <img class="fragment" src="https://jsdzem.pl/wp-content/uploads/2022/09/ethers-js.png" />
+          <img src="https://jsdzem.pl/wp-content/uploads/2022/09/ethers-js.png" />
+
+          <aside class="notes">
+            You defenitelly want to have a web3 library<br />
+            You don't want to reinvent the wheel<br /> 
+            <br /> 
+            A library hepls you to encrypt and decrypt data<br />
+            <br /> 
+            It's also useful for computations on frontend<br />
+            as pure JS is weak at Math, sorry<br />
+            <br />
+            and it helps you to deal with a wallet<br />
+            <br />
+            The are two most common libraries<br />
+            web3.js and ethers.js<br />
+            Personally, I like to use ethers.js<br />
+          </aside>
         </section>
 
         <section>
-          <pre><code data-trim data-line-numbers="1|2|3|4|5">
-						const provider = new ethers.providers.Web3Provider(window.ethereum);
+          <pre><code data-trim data-line-numbers="1-3|4|5,9|6|7|8|10">
+						const provider = new ethers.providers.Web3Provider(
+        window.ethereum
+      );
 						await provider.send("eth_requestAccounts", []);
-						const signer = provider.getSigner();
-						const contract = new ethers.Contract(address, abi, provider);
-						await contract.name()
+						const contract = new ethers.Contract(
+        address,
+        abi,
+        provider,
+      );
+						await contract.mintMyNFT()
 					</code></pre>
+
+          <aside class="notes">
+            Let's figure out this snippet<br />
+            <br />
+            1. Initialize a provider<br />
+            It could be a wallet or node<br />
+            This code fires when you click the connect wallet button<br />
+            <br />
+            3. Check what accounts you have access to<br />
+            <br />
+            5. Then can create a smart contract instance<br />
+            In order to do that you need adress, abi and provider.<br />
+            <br />
+            then just call the mintMyNFT method.<br />
+            <br />
+            There are two types of methods..<br />
+          </aside>
         </section>
 
         <section>
-          <h2>Reading from blockchain</h2>
+          <h2>Reading</h2>
           <ul>
-            <li>reading stands for getting something</li>
-            <li>free 🆓 you don't pay ETH for gas</li>
-            <li>no wallet required, shared node is enough</li>
-            <li>
+            <li class="fragment">free 🆓</li>
+            <li class="fragment">no wallet required</li>
+            <li class="fragment">
               <code>() ⇒ Promise&lt;Result&gt;</code>
             </li>
-            <li>no event emitted</li>
+            <li class="fragment">no event emitted</li>
           </ul>
+
+          <aside class="notes">
+            Reading is free<br />
+            You don't need a wallet, a node is enough<br />
+            <br />
+            If you call read method it gives you JS Promise<br />
+            When you await that Promise<br />
+            You get the result<br />
+            <br />
+            While reading there is no event emitted<br />
+          </aside>
         </section>
 
         <section>
-          <h2>Writing to blockchain</h2>
+          <h2>Writing</h2>
 
           <ul>
-            <li>writing stands for setting something</li>
-            <li>cost you to pay for gas</li>
-            <li>connected wallet required</li>
-            <li>
-              <code>
-                () ⇒ Promise&lt;{ wait: () ⇒ Promise&lt;Receipt&gt; }&gt;
-              </code>
+            <li class="fragment">costs you to pay for gas</li>
+            <li class="fragment">wallet required</li>
+            <li class="fragment">
+              <pre><code data-trim>
+                () ⇒ Promise&lt;{ 
+                  wait: () ⇒ Promise&lt;Receipt&gt;
+                }&gt;
+              </code></pre>
             </li>
-            <li>can emit events</li>
+            <li class="fragment">can emit events</li>
           </ul>
+
+          <aside class="notes">
+            In order to write you have to pay for gas<br />
+            It's a transaction fee<br />
+            <br />
+            Wallet is required, someone has to pay<br />
+            <br />
+            It's kinda double promise<br />
+            When user call an action to write something into blockchain<br />
+            Metamask wallet prompts them to:<br />
+            accept the transaction and fee amount<br />
+            That's been the first Promise<br />
+            <br />
+            When you get the receipt from the second Promise<br />
+            it means your transaction is already mined<br />
+            Unfortunetely you cannot tip developers<br />
+            <br />
+            It can emmit events<br />
+          </aside>
         </section>
 
         <section>
-          <h2>MetaMask</h2>
-          <p>*browser plugin screenshot*</p>
+          <img
+            style="height: 50vh"
+            class="fragment"
+            src="https://jsdzem.pl/wp-content/uploads/2022/09/metamask.png"
+            alt="MetaMask"
+          />
+
+          <aside class="notes">
+            The first wallet you probably meet is MetaMask<br />
+            It's a browser plugin<br />
+            <br />
+            I am connected to Polygon blockchain
+            where MATIC is the native cryptocurrency<br />
+            <br />
+            Down below...
+            I hold over $300<br />
+            Pretty nice...<br />
+            <br />
+            A got tip for you:<br />
+            It's about security - you cannot refresh credentials<br />
+            If you lose your private keys, you cannot even revoke them<br />
+            Be familiar with the best practices<br />
+          </aside>
         </section>
 
         <section>
-          <div style="display: flex; justify-content: space-between">
-            <p>wallet ==</p>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <h2>wallet</h2>
+
             <div style="text-align: right">
-              <p class="fragment">identity</p>
-              <p class="fragment">account</p>
-              <p class="fragment">owner of tokens</p>
-              <p class="fragment">values</p>
+              <h3 class="fragment fade-in-then-semi-out">identity</h3>
+              <h3 class="fragment fade-in-then-semi-out">account</h3>
+              <h3 class="fragment fade-in-then-semi-out">token owner</h3>
+              <h3 class="fragment">value</h3>
             </div>
           </div>
+
+          <aside class="notes">
+            However, what is a wallet in general?<br />
+            <br />
+            It's your web3 ID<br />
+            Its your account, in terms of web2<br />
+            That also means you can own tokens<br />
+            Tokens, to be worth your attention,<br />
+            need to refer to some VALUE<br />
+          </aside>
         </section>
 
         <section>
-          <h2>Challenges for front-end devs</h2>
+          <h2>
+            Challenges <br />for <br /> front-end devs
+          </h2>
+
+          <aside class="notes">
+            What challenges you meet building interface<br />
+            for web3 front-end?<br />
+          </aside>
         </section>
 
         <section>
-          <p>*some weird calculations in JavaScript 😅*</p>
+          <img
+            class="fragment"
+            src="https://jsdzem.pl/wp-content/uploads/2022/09/math.png"
+            alt="JS math"
+          />
+
+          <aside class="notes">
+            Fist one is aritmetic<br />
+            <br />
+            *some weird calculations in JavaScript 😅*<br />
+            <br />
+            We love numbers in JavaScript ♥️<br />
+            <br />
+            Because… It's just… unpredictable<br />
+            <br />
+            But…<br />
+          </aside>
         </section>
 
         <section>
-          <p>*cals code and result - side by side*</p>
+          <h2>BigNumber</h2>
+          <p>*18 decimals precisions</p>
+          <p>*only integers</p>
+
+          <aside class="notes">
+            That library solves all your problems<br />
+            <br />
+            * You need 18 decimals precision and even more<br />
+            <br />
+            * And it supports only integers ❤️<br />
+            Solidity performs likewise<br />
+          </aside>
         </section>
 
         <section>
-          <p>*issue with primitive obsession - code*</p>
+          <pre><code data-trim class="language-ts">
+            const myBalance = BigNumber.from('8920584203949257369');
+					</code></pre>
+
+          <aside class="notes">
+            It's looks like this<br />
+            I pass a numeric string to the constructor<br />
+            Then a can perform math operations<br />            
+          </aside>
+        </section>
+
+        <section>
+          <pre><code data-trim data-line-numbers="1-3|3|2" class="language-ts">
+            const myBalance = BigNumber.from('8920584203949257369')
+              .div('24342667722')
+              .mul('58407229393064');
+					</code></pre>
+
+          <aside class="notes">
+            It's chainable and immputable<br />
+            for your convenience of course<br /> 
+            <br /> 
+            I got a quiz for you…<br />
+            <br />
+            **Where is a bug in this code?<br />
+            Multiply first, then divide 😆<br />
+            Otherwise you'll lose precision<br />
+            <br />
+            ** Why numeric string?<br />
+            Because in case of native JS number type<br />
+            There is a limit<br />
+            However sting is just string, there is no limit<br />
+            You can put as long number as you want<br />
+          </aside>
+        </section>
+
+        <section>
+          <p style="display: flex" class="justify-center">
+            <span class="r-stack">
+              <span class="fragment fade-in-then-out">Primitive</span>
+              <span class="fragment">BigNumber</span>
+            </span>
+            &nbsp;Obsession
+          </p>
+          <pre><code data-trim class="language-ts">
+            const collateral = BigNumber.from('5000000000000000000000');
+            const interestRate = BigNumber.from('8920584203949257369');
+            const total = BigNumber.from('5180000000000000000000');
+					</code></pre>
+
+          <aside class="notes">
+            You can get obsessed with the Bitcoin price<br />
+            Oh no, sorry!<br />
+            <br />
+            I mean primitive obsession<br />
+            Or actually BigNumber obsession<br />
+            Everything is a BigNumber type<br />
+          </aside>
+        </section>
+
+        <section>
+          <div class="r-stack">
+            <pre><code data-trim class="language-ts">
+            function openSwap(total: BigNumber) {
+              ...
+            }
+					</code></pre>
+          <pre class="fragment"><code data-trim class="language-ts">
+            function openSwap(total: Total) {
+              ...
+            }
+					</code></pre>
+          </div>
+          <pre class="fragment"><code data-trim class="language-ts">
+            type Total = BigNumber & {
+              __brand: 'TOTAL';
+            };
+					</code></pre>
+
+          <aside class="notes">
+            Sometimes you want to tell a function<br />
+            to be not allowed to receive WHICHEVER BigNuber<br />
+            * It should expect Total to be passed<br />
+            * You can achieve that with the branding technique<br />
+          </aside>
+        </section>
+
+        <section>
+          <pre><code data-trim class="language-ts">
+            BigNumber.from('5000000000000000000000') as Collateral;
+            BigNumber.from('8920584203949257369') as InterestRate;
+            BigNumber.from('5180000000000000000000') as Total;
+					</code></pre>
+
+          <aside class="notes">
+            All those BigNumbers are not a BigNumber type any more<br />
+            Each of them has its own type<br />
+          </aside>
         </section>
 
         <section>
           <h2>Real time UI</h2>
+
+          <aside class="notes">
+            How to get real time UI<br />
+            <br />
+            Everything is about:<br />
+            <br />
+            When do I have to update data<br />
+            to keep my UI responsive?<br />
+          </aside>
         </section>
 
         <section>
@@ -255,64 +781,159 @@
           <ul>
             <li class="fragment">refresh data in relevant interval</li>
             <li class="fragment">
-              update when transaction transaction affected your data
+              update when transaction affects your data
             </li>
-            <li class="fragment">filter redundant calls</li>
+            <li class="fragment">filter out redundant calls</li>
             <li class="fragment">manage priority</li>
           </ul>
+
+          <aside class="notes">
+            The old, imperative approach is to<br />
+            <br />
+            * refresh data in relevant interval,<br />
+            * update when transaction affects your data,<br />
+            * filter out redundant calls,<br />
+            * and manage priority<br />
+          </aside>
         </section>
 
         <section>
           <div>
             <div>
-              <span>📦</span>
-              <span class="fragment">📦</span>
-              <span class="fragment">📦</span>
-              <span class="fragment">📦</span>
-              <span class="fragment">📦</span>
+              <span style="font-size: 2em;" class="fragment">📦</span>
+              <span style="font-size: 2em;" class="fragment">📦</span>
+              <span style="font-size: 2em;" class="fragment">📦</span>
+              <span style="font-size: 2em;" class="fragment">📦</span>
+              <span style="font-size: 2em;" class="fragment">📦</span>
             </div>
             <div>
-              <span>🕛</span>
+              <span style="font-size: 3em;">🕛</span>
             </div>
           </div>
+
+          <aside class="notes">
+            In web2 data changes over time<br />
+            <br />
+            In web3, data changes over blocks<br />
+            <br />
+            Nothing is happening between two consecutive blocks<br />
+          </aside>
         </section>
 
         <section>
-          <table>
-            <tr>
-              <td>UI</td>
-              <td>data</td>
-              <td>events</td>
-            </tr>
-            <tr>
-              <td>React</td>
-              <td>Redux</td>
-              <td>RxJS</td>
-            </tr>
-            <tr>
-              <td colspan="3" style="text-align: center">useDapp</td>
-            </tr>
-          </table>
+          <div>
+            <div style="display: flex" class="justify-center">
+              <img
+                style="height: 16vh"
+                src="https://jsdzem.pl/wp-content/uploads/2022/09/react.png"
+                alt="React.js"
+              />
+              <div class="r-stack">
+                <img
+                  class="fragment"
+                  style="height: 16vh"
+                  src="https://jsdzem.pl/wp-content/uploads/2022/09/redux.png"
+                  alt="Redux"
+                  data-fragment-index="1"
+                />
+                <p
+                  style="font-size: 2.5em"
+                  class="fragment"
+                  data-fragment-index="4"
+                >
+                  ❌
+                </p>
+              </div>
+              <div class="r-stack">
+                <img
+                  class="fragment"
+                  style="height: 16vh"
+                  src="https://jsdzem.pl/wp-content/uploads/2022/09/reactivex.png"
+                  alt="RxJS"
+                  data-fragment-index="2"
+                />
+                <p
+                  style="font-size: 2.5em"
+                  class="fragment"
+                  data-fragment-index="5"
+                >
+                  ❌
+                </p>
+              </div>
+            </div>
+            <img
+              class="fragment"
+              src="https://jsdzem.pl/wp-content/uploads/2022/09/usedapp-logo.png"
+              alt="useDapp"
+              data-fragment-index="3"
+            />
+          </div>
+
+          <aside class="notes">
+              I guess you'd like to use a framework<br />
+              <br />
+              * Let's have React<br />
+              <br />
+              you know, React is mostly for UI<br />        
+              I want to bring some cleaver approach for data menagment<br />
+              <br />
+              * I got redux<br />
+              <br />
+              * I also was thinking about RxJS<br />
+              In case be more reactive<br />
+              but…<br />
+              <br />
+              * I discovered useDapp <br />
+              And I fell in love with it - You know why?<br />
+              They said:<br />        
+              We tried Redux - not succeeded<br />
+              ❌ Redux<br />
+              we tried RxJS - And?<br />
+              ❌ RxJS<br />
+              NOT succeeded 😂<br />
+          </aside>
         </section>
 
         <section>
-          <p>
-            <span>Multicall</span>
-            <span class="fragment">+ block change detecting</span>
-            <span class="fragment">= real time UI</span>
-          </p>
+          <img
+            src="https://jsdzem.pl/wp-content/uploads/2022/09/usedapp.png"
+            alt="useDapp"
+          />
+
+          <aside class="notes">
+            Why is this game changer?
+          </aside>
         </section>
 
         <section>
-          Testing
-          <p>What do we want to test?</p>
+          <div>
+            <div>
+              <span>Multicall</span>
+              <span class="fragment">+ block change detecting</span>
+            </div>
+            <div class="fragment">
+              <div>=</div>
+              <div>real time UI</div>
+            </div>
+          </div>
+
+          <aside class="notes">
+            *It performs multicall<br />
+            <br />
+            * Multicall squashes all the read calls into one<br />
+            like GraphQl does<br />
+            <br />
+            * Also it detects incoming blocks<br />
+            like useQuery can run at intervals<br />
+            You don't need to care about nothing I mentioned in before<br />
+          </aside>
         </section>
 
         <section>
           <div class="r-stack">
             <img
               data-fragment-index="0"
-              class="fragment fade-in-then-semi-out"
+              class="fragment semi-fade-out"
               src="https://jsdzem.pl/wp-content/uploads/2022/09/test-testpyramid.png"
               alt="test pyramid"
             />
@@ -333,10 +954,7 @@
                 data-fragment-index="12"
                 style="margin-bottom: 6%"
               >
-                <span
-									class="fragment fade-out"
-									data-fragment-index="14"
-								>
+                <span class="fragment fade-out" data-fragment-index="14">
                   Run in real browser
                   <span class="fragment" data-fragment-index="13">
                     with real wallet
@@ -354,10 +972,10 @@
                     >what parts involved?</span
                   >
                   <span class="fragment" data-fragment-index="9"
-                    >local blockchain instance (Geth, Ganache)</span
+                    >local blockchain</span
                   >
                   <span class="fragment" data-fragment-index="10"
-                    >facade for all blockchain related communication</span
+                    >facade</span
                   >
                 </span>
               </p>
@@ -380,24 +998,97 @@
             </div>
 
             <div class="fragment" data-fragment-index="15">
-							<br/>
+              <br />
               <p>Cypress + MetaMask = Synpress</p>
-							<br/>
+              <br />
               <p>@testing-library</p>
-							<br/>
+              <br />
               <p>@testing-library</p>
             </div>
           </div>
+
+          <aside class="notes">
+            Do you know this pyramid?<br />
+            This scheme?<br />
+            <br />
+            It's the test level scheme.<br />
+            From the bottom: unit, integration and E2E tests<br />
+            <br />
+            Smart contracts are covered on Solidity level<br />
+            I want to test components and functions
+            no difference, like any other app<br />
+            <br />
+            For integration suite<br />
+            I have to answer a question<br />
+            What parts I want involved in pipeline?<br />
+            either local fake blockchain instance<br />
+            or facade for all blockchain related communication<br />
+            <br />
+            Finally you run tests in real browser<br />
+            with real wallet<br />
+            <br />
+            I use testing library for integration and unit testing<br />
+            To E2E community brings a plugin for Cypress called Synpress<br />
+            That plagin provides support for Metamask wallet<br />
+            So you no longer need to test it manualy<br />
+          </aside>
         </section>
 
-				<section>
-					<p>video with Synpress running</p>
-				</section>
+        <section>
+          <h2>Error logging</h2>
+          <div class="fragment">
+            <p><a href="http://sentry.io/">sentry.io</a></p>
+            <p><a href="https://logrocket.com/">Log Rocket</a></p>
+          </div>
 
-				<section>
-					Environments
-					<img class="fragment" data-src="https://jsdzem.pl/wp-content/uploads/2022/06/environments.png" alt="Environments" />
-				</section>
+          <aside class="notes">
+            Why you really need Error loging?<br />
+            Since your customer connected their wallet<br />
+            You have no idea what happens in the browser<br />
+            No server logs<br />
+            <br />
+            *So use event loggers like sentry.io or Log Rocket<br />
+            REMEMBER! DO NOT SEND ANY SENSITIVE DATA!<br />
+          </aside>
+        </section>
+
+        <section>
+          <h2>How mouch cost developing?</h2>
+
+          <aside class="notes">
+            You know gas, paid in ETH<br />
+            Of courese, You have to pay for deploying to production<br />
+            <br />
+            however<br />
+            We got testnets!<br />
+            with free token streams - faucets<br />
+            There are plenty of Sass services with a free tier<br />
+            I don't remember I paid for anything up front.<br />
+            <br />
+            Really did you thing<br />
+            we charge devs for writing code?!<br />
+          </aside>
+        </section>
+
+        <section>
+          <h2>grab the slides</h2>
+          <img
+            src="https://jsdzem.pl/wp-content/uploads/2022/09/qrcode_lebrande.github.io_.png"
+            alt="QR code to those slides"
+          />
+
+          <aside class="notes">
+            Who wants web3 developing?<br />
+            You?! Don't you?<br />
+            Don't YOU?<br />
+            Don't YOU?<br />
+            <br />
+            Really, donna want?<br />
+            <br />
+            come on!<br />
+            <p>🆓</p>
+          </aside>
+        </section>
       </div>
     </div>
 
